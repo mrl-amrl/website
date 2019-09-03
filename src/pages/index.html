@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="header">
+    <section id="scroll_btn" class="demo">
+        <a href="#intro" class="scrollA"><span></span></a>
+    </section>
+    <div class="overlay">
+
+    </div>
+    <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#headerCarousel" data-slide-to="1"></li>
+            <li data-target="#headerCarousel" data-slide-to="2"></li>
+            <li data-target="#headerCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="image-item" style="background-image: url('/images/banner-1.jpg')"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>ARKA</h4>
+                    <p>Robocup 2019 - Sydney</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image-item" style="background-image: url('/images/banner-2.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="image-item" style="background-image: url('/images/banner-3.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="image-item" style="background-image: url('/images/banner-4.jpg')"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="container section mt-5" id="intro">
+    <div class="intro">
+        <div class="header-title"><span>An Introduction To AMRL</span></div>
+        <div class="row">
+            <div class="col-sm-9">
+                Welcome to the Advanced Mobile Robotics Laboratory.
+                <br />
+                We are part of the SYNTECH Technology and Innovation Center
+                of Qazvin Islamic Azad University.
+                <br />
+                <b>Advanced Mobile Robotics Laboratory (AMRL)</b> was established at <b>Mechatronics Research Laboratory
+                    (MRL)</b> in
+                2003 as one of the outstanding independent research centers within the country. Our projects are
+                primarily focused on design and implementation of tracked and wheeled mobile robots, and mobile robotics
+                arms. At Advanced Mobile Robotics Laboratory we design and build some complementary components like Worm
+                Gearboxes, Bevel Gearboxes, High Power Motor Drivers, and Robot Controller Boards which play a pivotal
+                role in robotics. In addition, we design and develop Robot Control Softwares to operate robots at AMRL.
+            </div>
+            <div class="col-sm-3">
+                <img src="/images/logo.png?v=2" class="img-fluid logo-image" />
+            </div>
+            <div class="col-md-5 mt-4 mb-4">
+                <p>
+                    Karo is an advanced autonomous robot and a tele-operative robotic system with dexterous manipulator
+                    for different rescue missions have been designed and implemented. These robots will operate as a
+                    practical system to assist rescue personnel in real disaster situations such as earthquakes and
+                    explosions. The main capabilities of the system software are simultaneous localization and mapping,
+                    navigation, collision avoidance, sensor fusions, victim detection and exploration. Moreover, the
+                    robotic systems are developed on a set of sophisticated mechanical platforms which enhance the
+                    mobility ability of both autonomous and tele-operative robots.
+                </p>
+            </div>
+            <div class="col-md-7 mt-4 mb-4">
+                <iframe width="100%" height="320" src="https://www.youtube-nocookie.com/embed/V9PUI6NAmOY"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container section mt-3 mb-5 robots">
+    <div class="intro">
+        <div class="header-title"><span>Meet Our Robots</span></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="/images/robot.png?v=2" class="img-fluid" />
+            </div>
+            <div class="col-sm-4">
+                <img src="/images/robot.png?v=2" class="img-fluid" />
+            </div>
+            <div class="col-sm-4">
+                <img src="/images/robot.png?v=2" class="img-fluid" />
+                <h3 class="text-center mt-4">ARKA</h3>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+{% endblock %}

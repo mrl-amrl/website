@@ -1,0 +1,7 @@
+#!/bin/bash
+./node_modules/.bin/gulp clean
+./node_modules/.bin/gulp build
+rm -rf www/mrl-amrl.ir
+cp -r dist www/mrl-amrl.ir
+cd www
+docker build -t amrl_website:latest .

@@ -1,0 +1,74 @@
+{
+    "members": [{
+            "name": "Dr. Farshid Najafi",
+            "title": "Supervisor",
+            "id": "farshid",
+            "linkedin": "farshid-najafi-b1437910b"
+        }, {
+            "name": "Hamed Bagheri",
+            "title": "Leader",
+            "id": "hamed",
+            "linkedin": "bagherihamed",
+            "instagram": "hamedd_bagherii"
+        },
+        {
+            "name": "Mohammadreza Ahadi",
+            "title": "Electrical Engineer",
+            "id": "mohammadreza",
+            "instagram": "ahadi_mohamadr3za"
+        },
+        {
+            "name": "Navid Bonakdar",
+            "title": "Mechanical Engineer",
+            "id": "navid",
+            "instagram": "navidbonakdar76"
+        },
+        {
+            "name": "Sina Moshgforoush",
+            "title": "Software Engineer",
+            "id": "sina",
+            "instagram": "msinamsh"
+        },
+        {
+            "name": "Ali Pouriayevali",
+            "title": "Mechanical Engineer",
+            "id": "ali",
+            "instagram": "alipouriayevali",
+            "linkedin": "aliasghar-pouryayvali-422540156"
+        },
+        {
+            "name": "Mohsen Mojahedpoor",
+            "title": "Electrical Engineer",
+            "id": "mohsen",
+            "instagram": "mohsen.mjp"
+        },
+        {
+            "name": "Amir Sharifi",
+            "title": "Software Engineer",
+            "id": "amir",
+            "instagram": "ami__rsh",
+            "github": "amirsharifi74",
+            "linkedin": "amir-sharifi-988581182"
+        },
+        {
+            "name": "Ahmadreza Zibaei",
+            "title": "Software Engineer",
+            "id": "aiden",
+            "instagram": "aidenzibaei",
+            "linkedin": "aidenzibaei",
+            "github": "ahmdrz"
+        },
+        {
+            "name": "Misaq Salami",
+            "title": "Software Engineer",
+            "id": "misaq",
+            "instagram": "misaq.z"
+        },
+        {
+            "name": "Abbas Ghavami",
+            "title": "Electrical Engineer",
+            "id": "abbas",
+            "instagram": "_abbas_gh_"
+        }
+    ]
+}

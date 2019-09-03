@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="team-page">
+    <div class="header">
+        <section id="scroll_btn" class="demo">
+            <a href="#intro" class="scrollA"><span></span></a>
+        </section>
+        <div class="overlay">
+
+        </div>
+        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-item" style="background-image: url('/images/team.jpg')"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Team</h4>
+                        <p>Robocup 2019 - Sydney</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section mt-5 mb-5" id="intro">
+        <div class="intro">
+            <div class="header-title"><span>Meet the Team</span></div>
+        </div>
+        <div class="row mb-4">
+            {% for member in members %}
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="team-card">
+                    <img src="/images/members/{{member.id}}.jpg" class="profile-image">
+                    <h1 class="member-name">{{member.name}}</h1>
+                    <h6 class="member-title">{{member.title}}</h6>
+                    <div class="social-icons">
+                        {% if member.github %}
+                        <a href="https://github.com/{{member.github}}" target="_blank"><img src="/images/icons/github.png"></a>
+                        {% endif %}
+                        {% if member.instagram %}
+                        <a href="https://instagram.com/_u/{{member.instagram}}" target="_blank"><img
+                                src="/images/icons/instagram.png"></a>
+                        {% endif %}
+                        {% if member.linkedin %}
+                        <a href="https://linkedin.com/in/{{member.linkedin}}" target="_blank"><img
+                            src="/images/icons/linkedin.png"></a>
+                        {% endif %}                        
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

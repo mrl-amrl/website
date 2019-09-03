@@ -1,0 +1,310 @@
+@import "colors.scss";
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 24px;
+    word-spacing: 1px;
+    background-color: $oc-gray-1;
+    font-family: 'Lato';
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.navbar-top {
+    transition: all 300ms ease-in-out;
+    background-color: transparent;
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+    }
+
+    &.scrolling {
+        background-color: white;
+        box-shadow: 0px 4px 12px rgba($oc-gray-8, 0.3);
+
+        .navbar-brand,
+        .nav-link {
+            color: #222 !important;
+        }
+    }
+}
+
+.navbar-brand {
+    img {
+        width: 100px;
+    }
+}
+
+#preload {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#preload .kd-bounce {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 40px auto;
+}
+
+#preload .kd-bounce:before,
+#preload .kd-bounce:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #242424;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: kd-bounce 2.4s infinite ease-in-out;
+}
+
+#preload .kd-bounce:after {
+    animation-delay: -1.2s;
+}
+
+@keyframes kd-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.section {
+    .header-title {
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        display: block;
+        font-size: 26px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            background-color: $oc-gray-1;
+            position: relative;
+            z-index: 2;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        &::before {
+            content: "";
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            display: block;
+            position: relative;
+            top: 14px;
+        }
+    }
+}
+
+footer {
+    margin-top: 30px;
+    box-shadow: 0px -4px 10px rgba($oc-gray-4, 0.7);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.heart {
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 10px;
+
+    &:after {
+        left: 5px;
+        top: 0;
+    }
+
+    &:before {
+        top: -5px;
+        left: 0;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        background-color: red;
+        border-radius: 50%;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+    }
+}
+
+.robots {
+    img {
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+.image-window,
+iframe {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(#000, 0.2);
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 6px 14px rgba(#000, 0.3);
+    }
+}
+
+@-webkit-keyframes scrollAnimation {
+    0% {
+        -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+
+.header {
+    box-shadow: 0px 4px 10px rgba($oc-gray-4, 0.7);
+    border: 1px solid $oc-gray-3;
+    margin-top: -1px;
+    margin-left: -1px;
+
+
+    #scroll_btn {
+        position: absolute;
+        z-index: 10;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 20px;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 24px;
+                height: 24px;
+                margin-left: -12px;
+                border-left: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                -webkit-transform: rotateZ(-45deg);
+                transform: rotateZ(-45deg);
+                -webkit-animation: scrollAnimation 1.5s infinite;
+                animation: scrollAnimation 1.5s infinite;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .carousel {
+        margin: 0;
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 3;
+        }
+    }
+
+    position: relative;
+
+    .overlay {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.5) 40%, rgba(17, 17, 17, 0) 60%, rgba(17, 17, 17, 1) 100%);
+        background-attachment: fixed;
+        opacity: 0.7;
+    }
+
+    .image-item {
+        height: 65vh;
+        object-fit: cover;
+        margin: 0;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+
+    .carousel-caption {
+        bottom: 50px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .header .image-item {
+        background-attachment: scroll !important;
+    }
+}

@@ -1,0 +1,6 @@
+### MRL-AMRL's website
+
+```
+$ nvm use 12.0.0
+$ ./publish # to docker hub
+```

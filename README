@@ -1,6 +1,17 @@
 ### MRL-AMRL's website
 
+#### Install dependencies
+
 ```
 $ nvm use 12.0.0
-$ ./publish # to docker hub
+$ npm i
+```
+
+#### Build
+
+```
+$ ./node_modules/.bin/gulp build
+$ mv dist mrl-amrl.ir
+$ zip -r dist.zip mrl-amrl.ir
+$ rm -rf mrl-amrl.ir
 ```

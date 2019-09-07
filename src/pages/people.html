@@ -28,9 +28,9 @@
         </div>
         <div class="row mb-4">
             {% for member in members %}
-            <div class="col-lg-3 col-md-4 col-6">
+            <div class="col-lg-3 col-md-4 col-12">
                 <div class="team-card">
-                    <img src="/images/members/{{member.id}}.jpg" class="profile-image">
+                    <img src="/images/members/{{member.id}}.jpg" class="profile-image" alt="MRL - Advanced Mobile Robotic Labratory {{member.name}} {{member.title}}">
                     <h1 class="member-name">{{member.name}}</h1>
                     <h6 class="member-title">{{member.title}}</h6>
                     <div class="social-icons">
@@ -46,6 +46,23 @@
                             src="/images/icons/linkedin.png"></a>
                         {% endif %}                        
                     </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container section mt-5 mb-5" id="formers">
+        <div class="intro">
+            <div class="header-title"><span>Former Members</span></div>
+        </div>
+        <div class="row mb-4">
+            {% for member in formers %}
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="team-card">
+                    <img src="/images/members/{{member.id}}.jpg" class="profile-image"  alt="MRL - Advanced Mobile Robotic Labratory {{member.name}} {{member.title}}">
+                    <h1 class="member-name">{{member.name}}</h1>
+                    <h6 class="member-title">{{member.title}}</h6>                    
                 </div>
             </div>
             {% endfor %}

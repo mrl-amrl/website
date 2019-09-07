@@ -2,7 +2,7 @@
     "members": [{
             "name": "Dr. Farshid Najafi",
             "title": "Supervisor",
-            "id": "farshid",
+            "id": "najafi",
             "linkedin": "farshid-najafi-b1437910b"
         }, {
             "name": "Hamed Bagheri",
@@ -70,5 +70,67 @@
             "id": "abbas",
             "instagram": "_abbas_gh_"
         }
+    ],
+    "formers": [
+        {
+            "id": "nourozi",
+            "name": "Mohammad Nourozi",
+            "title": "UTS University"
+        },
+        {
+            "id": "moshfeghi",
+            "name": "Mohammad Moshfeghi",
+            "title": "Sogang University"
+        },
+        {
+            "id": "mokaram",
+            "name": "Saeid Mokarram",
+            "title": "Sheffield University"
+        },
+        {
+            "id": "chegini",
+            "name": "Jafar Chegini",
+            "title": "Lisbon University"
+        },
+        {
+            "id": "mashat",
+            "name": "Ebrahim Mashat",
+            "title": "Shanghai University"
+        },
+        {
+            "id": "karambakhsh",
+            "name": "Ahmad Karambakhsh",
+            "title": "Shanghai University"
+        },
+        {
+            "id": "dadvar",
+            "name": "Mehdi Dadvar",
+            "title": "Lamar University"
+        },
+        {
+            "id": "habibian",
+            "name": "Soheil Habibian",
+            "title": "Bucknell University"
+        },
+        {
+            "id": "hosseini",
+            "name": "Alireza Hosseini",
+            "title": "Synapticon Company"
+        },
+        {
+            "id": "peykari",
+            "name": "Behzad Peykari",
+            "title": "Simon Fraser University"
+        },
+        {
+            "id": "haeri",
+            "name": "Hossein Haeri",
+            "title": "Washington University"
+        },
+        {
+            "id": "arvan",
+            "name": "Mohammad Arvan",
+            "title": "Illinois University"
+        }        
     ]
 }

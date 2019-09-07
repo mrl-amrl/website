@@ -9,10 +9,14 @@
         margin-bottom: 30px;
 
         .profile-image {
-            width: 100%;
             border-radius: 50%;
             border: 4px solid $oc-gray-4;
             transition: all 300ms ease-in-out;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .member-name {
@@ -44,6 +48,7 @@
         }
 
         transform: scale(0.99);
+
         &:hover {
             .social-icons {
                 img {
